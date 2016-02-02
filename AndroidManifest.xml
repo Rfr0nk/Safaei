@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iranstco.stco"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:largeHeap="true" >
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.VIBRATE" />
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+ 
+<!--
+  IMPORTANT: Change "com.iranstco.stco.permission.C2D_MESSAGE" in the lines below
+  to match your app's package name + ".permission.C2D_MESSAGE".
+-->
+<permission android:protectionLevel="signature"
+    android:name="com.iranstco.stco.permission.C2D_MESSAGE" />
+<uses-permission android:name="com.iranstco.stco.permission.C2D_MESSAGE" />
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/zibaei"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme"
+        android:name="parse" >
+        <activity
+            android:name=".second"
+            android:label="@string/app_name" >
+        </activity>
+                <activity
+            android:name=".about"
+            android:label="@string/app_name" >
+        </activity>
+                <activity
+            android:name=".nosubcat"
+            android:label="@string/app_name" >
+        </activity>
+                        <activity
+            android:name=".item"
+            android:label="@string/app_name" >
+        </activity>
+                                <activity
+            android:name=".shop"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".subcategory"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".products"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".viewproduct"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".IranstcoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".JSONParser"
+            android:label="@string/app_name" >
+        </activity>
+                <activity
+            android:name=".main"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name="com.iranstco.shop.shop"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".newhome"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".splash"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.iranstco.shop.viewdetail"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name="com.iranstco.shop.listitem"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".login"
+            android:label="@string/app_name" >
+                        
+        </activity>
+                <activity
+            android:name=".Items"
+            android:label="@string/app_name" >
+
+        </activity>
+                        <activity
+            android:name=".MyAdapter"
+            android:label="@string/app_name" >
+
+        </activity>
+                                <activity
+            android:name=".daropanjareh"
+            android:label="@string/app_name" >
+
+        </activity>
+                                <activity
+            android:name=".contact"
+            android:label="@string/app_name" >
+
+        </activity>
+                                        <activity
+            android:name=".masaleh"
+            android:label="@string/app_name" >
+
+        </activity>
+                                                <activity
+            android:name=".elektriki"
+            android:label="@string/app_name" >
+
+        </activity>
+        
+                                                                                <activity
+            android:name=".vije"
+            android:label="@string/app_name" >
+
+        </activity>
+                                                                                        <activity
+            android:name=".MyAdapter1"
+            android:label="@string/app_name" >
+
+        </activity>
+        <service android:name="com.parse.PushService" />
+<receiver android:name="com.parse.ParseBroadcastReceiver">
+  <intent-filter>
+    <action android:name="android.intent.action.BOOT_COMPLETED" />
+    <action android:name="android.intent.action.USER_PRESENT" />
+  </intent-filter>
+</receiver>
+<receiver android:name="com.parse.ParsePushBroadcastReceiver"
+    android:exported="false">
+  <intent-filter>
+    <action android:name="com.parse.push.intent.RECEIVE" />
+    <action android:name="com.parse.push.intent.DELETE" />
+    <action android:name="com.parse.push.intent.OPEN" />
+    </intent-filter>
+</receiver>
+<receiver android:name="com.parse.GcmBroadcastReceiver"
+    android:permission="com.google.android.c2dm.permission.SEND">
+  <intent-filter>
+    <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+    <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+ 
+    <!--
+      IMPORTANT: Change "com.iranstco.stco" to match your app's package name.
+    -->
+    <category android:name="com.iranstco.stco" />
+  </intent-filter>
+</receiver>
+    </application>
+
+</manifest>

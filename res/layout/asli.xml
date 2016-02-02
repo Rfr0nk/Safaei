@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.166" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_marginLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.166"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.10"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/beruzresani" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.166" android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:id="@+id/elek"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/elekteriki" />
+
+                    <ImageView
+                        android:id="@+id/imgv1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/darbopanjere" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.166" android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/imgv2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/mekaniki" />
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/masalehsakhtemani" />
+
+                </LinearLayout>
+
+              <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                </HorizontalScrollView>
+                <ImageView
+                    android:id="@+id/vije"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.10"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/forushvije" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="0.166" >
+
+                    <ImageView
+                        android:id="@+id/imgv5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ertebat" />
+
+                    <ImageView
+                        android:id="@+id/web"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/websitema" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="0.166" >
+
+                    <ImageView
+                        android:id="@+id/exit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/khoruj" />
+
+                    <ImageView
+                        android:id="@+id/aboutus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/aboti" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
